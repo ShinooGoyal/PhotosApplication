@@ -3,12 +3,13 @@ package kot.practice.atry.com.photosapplication.modelnew;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Photos {
 
     @SerializedName("hits")
-    private List<Hit> mHits;
+    private List<Hit> mHits = new ArrayList<>();
     @SerializedName("total")
     private Long mTotal;
     @SerializedName("totalHits")
